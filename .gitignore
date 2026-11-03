@@ -1,0 +1,13 @@
+node_modules/
+.expo/
+dist/
+ios/
+android/
+*.log
+.claude/worktrees/
+design/screenshots/raw/
+design/screenshots/out/
+design/screenshots/save-*.json
+design/creative/save-*.json
+design/creative/raw-*.png
+design/creative/*.log

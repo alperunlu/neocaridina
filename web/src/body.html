@@ -1,0 +1,75 @@
+<canvas id="c" data-i18n-aria="scene.canvas" aria-label="Aquarium view"></canvas>
+
+<div id="hud">
+  <div class="hl">
+    <div class="row">
+      <div class="pill" id="moneyPill" data-i18n-aria="hud.money" aria-label="Money"><span class="coin lg" aria-hidden="true">€</span><b id="money">0</b></div>
+    </div>
+    <div class="row">
+      <div class="pill" id="tankPill"><button id="tPrev" data-i18n-aria="hud.prevTank" aria-label="Previous tank"></button><span id="tankName"></span><button id="tNext" data-i18n-aria="hud.nextTank" aria-label="Next tank"></button></div>
+      <div class="pill camPill" role="group" data-i18n-aria="hud.camera" aria-label="Camera"><button data-cam="side" data-i18n-aria="hud.camSide" data-i18n-title="hud.camSide" aria-label="Side view" title="Side view"></button><button data-cam="topv" data-i18n-aria="hud.camTop" data-i18n-title="hud.camTop" aria-label="Top view" title="Top view"></button><button data-cam="under" data-i18n-aria="hud.camUnder" data-i18n-title="hud.camUnder" aria-label="Underwater" title="Underwater"></button><button data-cam="room" data-i18n-aria="hud.camRoom" data-i18n-title="hud.camRoom" aria-label="Room" title="Room"></button></div>
+      
+    </div>
+  </div>
+  <div class="hc">
+    <div class="pill" id="datePill"><span id="dIcon" aria-hidden="true"></span><span class="d"><b id="day"></b><small id="dsub"></small></span><span class="sep"></span><span id="wx"></span></div>
+    <div class="pill" id="speed" role="group" data-i18n-aria="hud.speedGroup" aria-label="Game speed"></div>
+    <button class="pauseChip" hidden data-i18n-aria="hud.pausedAria" aria-label="Game paused, tap to resume"><i aria-hidden="true"></i><span data-i18n="hud.paused">Paused</span></button>
+  </div>
+  <div class="hr" id="menu"></div>
+</div>
+<div id="hudM">
+  <div class="r1">
+    <div class="pill mMoney" data-i18n-aria="hud.money" aria-label="Money"><span class="coin lg" aria-hidden="true">€</span><b class="jMoney">0</b></div>
+    <div class="pill mDate"><span class="jDIcon" aria-hidden="true"></span><span style="min-width:0"><span class="dl"><b class="jDay"></b></span><small class="tRow"><span class="jTime"></span></small></span></div>
+    <div class="pill mSpd" role="group" data-i18n-aria="hud.speedGroup" aria-label="Game speed"><button id="spdP" aria-label="Pause"></button><button id="spdC" aria-label="Speed"></button></div>
+    <button class="rbtn" id="gearBtn" data-i18n-aria="hud.settings" aria-label="Settings"></button>
+  </div>
+  <div class="r2">
+    <div class="pill sm mTank"><button class="jPrev" data-i18n-aria="hud.prevTank" aria-label="Previous tank"></button><span class="jTank"></span><button class="jNext" data-i18n-aria="hud.nextTank" aria-label="Next tank"></button></div>
+    
+    <button class="pauseChip" hidden data-i18n-aria="hud.pausedAria" aria-label="Game paused, tap to resume"><i aria-hidden="true"></i><span data-i18n="hud.paused">Paused</span></button>
+    <div class="pill sm camPill" role="group" data-i18n-aria="hud.camera" aria-label="Camera"><button data-cam="side" data-i18n-aria="hud.camSide" aria-label="Side view"></button><button data-cam="topv" data-i18n-aria="hud.camTop" aria-label="Top view"></button><button data-cam="under" data-i18n-aria="hud.camUnder" data-i18n-title="hud.camUnder" aria-label="Underwater" title="Underwater"></button><button data-cam="room" data-i18n-aria="hud.camRoom" data-i18n-title="hud.camRoom" aria-label="Room" title="Room"></button></div>
+  </div>
+</div>
+<div id="toasts" aria-live="polite"></div>
+<div id="selCard" hidden role="region" data-i18n-aria="card.region" aria-label="Selected shrimp"></div>
+<div id="dockWrap">
+  <div id="pop" hidden></div>
+  <div id="hint"></div>
+  <nav id="dock" data-i18n-aria="dock.tools" aria-label="Tools"></nav>
+  <nav id="nav" data-i18n-aria="nav.menu" aria-label="Menu"></nav>
+</div>
+<div id="scrim" aria-hidden="true"></div>
+<section id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="mh"><span id="mIcon" aria-hidden="true"></span><div class="grow"><h2 id="mTitle" tabindex="-1"></h2><p id="mSub"></p></div><button class="x" id="mX" data-i18n-aria="hud.close" aria-label="Close"></button></div>
+  <div id="mBody"></div>
+</section>
+<div id="cele" hidden role="status" aria-live="assertive"><canvas aria-hidden="true"></canvas><div class="cb"><div class="cbI" aria-hidden="true"></div><h3></h3><p></p><small data-i18n="hud.celeTap">Tap to continue</small></div></div>
+<section id="title" hidden role="dialog" aria-modal="true" aria-labelledby="ttlName">
+  <div class="tCol">
+    <header class="tLogo">
+      <span class="tMark" aria-hidden="true"></span>
+      <h1 id="ttlName">Neocaridina</h1>
+      <p class="tSub" data-i18n="title.sub">Shrimp Farm</p>
+    </header>
+    <div class="tCard" id="tMain">
+      <button class="tBtn go" data-t="load"><b data-i18n="title.load">Load game</b><small id="tSave"></small></button>
+      <button class="tBtn" data-t="new"><b data-i18n="title.new">New game</b></button>
+      <button class="tBtn" data-t="how"><b data-i18n="title.how">How to play</b></button>
+      <button class="tBtn" data-t="opts"><b data-i18n="title.opts">Options</b></button>
+    </div>
+    <div class="tCard" id="tConfirm" hidden>
+      <h2 data-i18n="title.newTitle">Start a new game?</h2>
+      <p data-i18n="title.newBody">Your saved farm will be replaced.</p>
+      <div class="tRow"><button class="tBtn sm" data-t="back"><b data-i18n="title.cancel">Cancel</b></button><button class="tBtn sm warn" data-t="newOk"><b data-i18n="title.newOk">Start over</b></button></div>
+    </div>
+    <div class="tCard tHow" id="tHow" hidden>
+      <div class="tHowTop"><button class="tBack" data-t="back" data-i18n-aria="title.back" aria-label="Back"></button><h2 data-i18n="title.how">How to play</h2><span class="tPage" id="tPage"></span></div>
+      <div class="tHowBody" id="tHowBody" aria-live="polite"></div>
+      <div class="tRow"><button class="tBtn sm" data-t="prev"><b data-i18n="title.prev">Back</b></button><button class="tBtn sm go" data-t="next"><b id="tNextL" data-i18n="title.next">Next</b></button></div>
+    </div>
+    <p class="tFoot" id="tFoot"></p>
+  </div>
+</section>
+<div id="err" data-i18n="boot.webgl">This game needs WebGL, but your device couldn't start 3D graphics.</div>

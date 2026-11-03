@@ -1,0 +1,8 @@
+{
+ "title":{"tr":["Kendi karides çiftliğini kur","Sakin, elle bakım isteyen bir akvaryum simülasyonu"],"en":["Build your own shrimp farm","A calm, hands-on aquarium sim"],"nl":["Bouw je eigen garnalenkwekerij","Een rustige aquariumsimulatie om zelf te verzorgen"]},
+ "tank":{"tr":["Yaşayan bir 3D akvaryum","Bitkiler, yosun ve yüzlerce minik karides"],"en":["A living 3D aquarium","Plants, moss and hundreds of tiny shrimp"],"nl":["Een levend 3D-aquarium","Planten, mos en honderden kleine garnalen"]},
+ "codex":{"tr":["Renkleri çaprazla","Gerçek genetik: yeni varyeteler keşfet"],"en":["Cross the colours","Real genetics: discover new varieties"],"nl":["Kruis de kleuren","Echte genetica: ontdek nieuwe varianten"]},
+ "water":{"tr":["Suyu doğru tut","Döngü, amonyak, nitrat ve Walstad dengesi"],"en":["Keep the water right","Cycling, ammonia, nitrate and Walstad balance"],"nl":["Houd het water goed","Inlopen, ammoniak, nitraat en Walstad-balans"]},
+ "orders":{"tr":["Sipariş al, çiftliğini büyüt","Müşterilerin istediği karidesleri yetiştir"],"en":["Fill orders, grow your farm","Breed the shrimp customers ask for"],"nl":["Vul bestellingen, laat je kwekerij groeien","Kweek de garnalen die klanten zoeken"]},
+ "night":{"tr":["Akşam olunca lamba yanar","Günün saatine göre değişen ışık"],"en":["Lamp on as evening falls","Lighting that follows the time of day"],"nl":["’s Avonds gaat de lamp aan","Licht dat het tijdstip volgt"]}
+}
